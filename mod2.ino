@@ -10,8 +10,8 @@ void loop() {
       char data= Serial.read(); // reading the data received from the bluetooth module
       switch(data)
       {
-        case '1': digitalWrite(8, HIGH);break; // when a is pressed on the app on your smart phone
-        case '0': digitalWrite(8, LOW);break; // when d is pressed on the app on your smart phone
+        case '1': digitalWrite(8, HIGH);break; // when input is given 1 
+        case '0': digitalWrite(8, LOW);break; // when input is given 0
         default : break;
       }
       Serial.println(data);
